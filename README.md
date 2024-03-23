@@ -5,11 +5,12 @@ Tomando en cuenta la importancia de saber la opinión de los clientes sobre la e
 ### **Hospitales Manipal**
 Las semillas de nuestro origen se sembraron en 1953, cuando el fundador del Grupo de Educación y Medicina de Manipal (MEMG), el Dr. TMA Pai, estableció el Kasturba Medical College en Manipal, Karnataka. Los hospitales de Manipal como una entidad comenzaron a existir en 1991 con el lanzamiento de nuestro hospital insignia de 650 camas en Old Airport Road, Bangalore. Hoy, somos uno de los grupos de atención médica líderes de la India con una red de 15 hospitales y tenemos una presencia internacional a través de nuestro hospital en Malasia.
 
-***Visión:*** Manipal Hospitals es uno de los proveedores de atención médica de múltiples especialidades más importantes de la India que atiende a pacientes indios e internacionales. Somos parte del Grupo de Educación y Medicina de Manipal (MEMG), un líder en las áreas de educación y salud. Con más de 5000 camas operativas, nuestro compromiso con el bienestar general de una persona es la base de todo lo que hacemos. A través de nuestra red de hospitales y un equipo experimentado de profesionales médicos, brindamos atención médica de calidad y asequible para todos.
+### ***Visión:*** 
+Manipal Hospitals es uno de los proveedores de atención médica de múltiples especialidades más importantes de la India que atiende a pacientes indios e internacionales. Somos parte del Grupo de Educación y Medicina de Manipal (MEMG), un líder en las áreas de educación y salud. Con más de 5000 camas operativas, nuestro compromiso con el bienestar general de una persona es la base de todo lo que hacemos. A través de nuestra red de hospitales y un equipo experimentado de profesionales médicos, brindamos atención médica de calidad y asequible para todos.
 ### **Satisfacción de productos promotor Neto**
 El promotor neto es un índice que permite a las compañías validar la calidad del servicio al cliente, en base a la pregunta: ¿Qué probabilidades hay de que recomiende esta compañía, producto o servicio a un amigo o colega? Esta pregunta se valida entonces en una escala de 0 a 10, en la cual los promotores proporcionan una puntación de 9 o 10, los clientes pasivos 1 o 8, mientras que aquellos que responden con una puntuación de 6 o menos son detractores. De manera que el NPS seria las diferencia entre promotores menos refractores.
 
-![Resultado de imagen para net promoter score](007.jpeg)
+![](007.jpeg)
 
 De manera similar al estudiar, como se comporta este en indicador en relación con otras industrias encontramos que está por debajo de algunas industrias, pero no es de los más bajos. Este indicador en la industria de la salud está en un aproximado de 77% en las empresas donde es usado.
 
@@ -39,7 +40,6 @@ Poder generar un modelo que supere el nivel ingenuo de clasificación estimado b
 # **Comprensión del negocio**
 Con el objetivo del negocio de entender las variables que están siendo influyentes en el indicador NPS del hospital NPS se valida el comportamiento de esta variable y de su homóloga el SCORENPS. Se encuentra que su distribución y algunos de sus estadísticos básicos que la calificación del hospital alrededor de este indicador tiende a ser alta con un promedio intercuartílico en Q2 de 8 puntos en la escala de 1 a 10, de igual manera esto se refleja en la variable NPS en la cual el 63% se califican como clientes Promotores.
 
-SCORENPS                                                                 NPS
 
 ![](009.png)![](010.png)
 
@@ -52,12 +52,18 @@ Posteriormente se validan la variable de carácter demográficas que se tienen e
 
 Finalmente se evalúa el comportamiento de las variables que califican los diferentes servicios del hospital y se encuentra que todas las variables tienen un comportamiento asimétrico positivo también se puede observar que entre los mismos grupos de calificación los comportamientos suele ser similares por lo que se decide evaluar la correlaciones presentes entre calificaciones, para poder ver si la creación de nuevas variables promedio entre grupos pueden ser variables mas relevantes para la clasificación que evite el overfiting.
 
-![](028.png)![](029.png)
-![](030.png)![](031.png)
-![](032.png)![](033.png)
-![](034.png)![](035.png)
-![](036.png)![](037.png)
-![](038.png)![](039.png)
+![](028.png)
+![](029.png)
+![](030.png)
+![](031.png)
+![](032.png)
+![](033.png)
+![](034.png)
+![](035.png)
+![](036.png)
+![](037.png)
+![](038.png)
+![](039.png)
 ![](040.png)
 ![](041.png)
 ![](042.png)
