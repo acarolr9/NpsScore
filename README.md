@@ -45,44 +45,22 @@ SCORENPS                                                                 NPS
 
 Posteriormente se validan la variable de carácter demográficas que se tienen en la base (ESTADOCIVIL, EDAD, GENERO, CATEGORIACAMA, DEPARTAMENTO, GENERO, COSTOESTIMADO,..) con el fin de evaluar su comportamiento y ver si estos cuentan con valores perdidos o atípicos en este caso podemos observar que ninguna de las variables se encuentran valores perdidos, pero las variables como el COSTOESTIMADO y DIASINTERNADO tienen valores de cola derecha muy altos que nos indican alta asimetría positiva, los cuales se van a evaluar posteriormente. También se encuentra que las variables ESTADO y PAIS tiene muy poca variación haciéndolas casi variables únicas por lo que se decide excluirlas del modelo, también se decide transformar las fechas en meses y solo se toma la fecha de entrada para evitar correlaciones entre fechas.
 
-![ref1]
+![](018.png)![](019.png)
 
-![ref1]
-
-
-
-![ref1]
-
-![ref1]
-
-
-
-![](011.png)![](013.png)![](014.png)![](015.png)![](016.png)![](017.png)![](018.png)![](019.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-![](020.png)![](021.png)![](022.png)![](023.png)![](024.png)![](025.png)![](026.png)![ref2]
+![](026.png)
+![](027.png)
 
 Finalmente se evalúa el comportamiento de las variables que califican los diferentes servicios del hospital y se encuentra que todas las variables tienen un comportamiento asimétrico positivo también se puede observar que entre los mismos grupos de calificación los comportamientos suele ser similares por lo que se decide evaluar la correlaciones presentes entre calificaciones, para poder ver si la creación de nuevas variables promedio entre grupos pueden ser variables mas relevantes para la clasificación que evite el overfiting.
 
 ![](028.png)![](029.png)
-
 ![](030.png)![](031.png)
-
-![](032.png)![](033.png)![](034.png)![](035.png)![](036.png)![](037.png)![](038.png)![](039.png)
-
-![ref3]![ref4]![ref5]
-
+![](032.png)![](033.png)
+![](034.png)![](035.png)
+![](036.png)![](037.png)
+![](038.png)![](039.png)
+![](040.png)
+![](041.png)
+![](042.png)
 Como se menciono anteriormente se validan las correlaciones presentes entre las variables de evaluación de los servicios del hospital, y se confirma la hipotesis que se presente en relación con la alta correlación que se genera entre variables del mismo grupo. Principalmente en los grupos naranjas y grises en cuyo caso solo las correlaciones entre variables del mismo grupo son iguales o mayores a 0,6. Por lo que se trabajara con una predicción transformando solo las variables grises y naranjas y otra transformando todas.
 
 ![](043.png)
@@ -104,17 +82,11 @@ Como primer acercamiento a un modelo de clasificación de clientes según el ind
 
 Para su construcción de utiliza el método CHART sin modificar parámetros de control y se obtuvieron los siguientes 3 árboles. De los cuales se pueden ver los resultados de sus indicadores en la tabla de resultados. Acá observamos que el modelo que parece tener mejores indicadores de clasificación es el segundo modelo con todas las variables de grupo transformadas lo cual también se valida en la plataforma de Kaggle.
 
-![Imagen que contiene captura de pantalla
+![](048.jpeg)Modelo1
 
-Descripción generada automáticamente](048.jpeg)Modelo1
+![](049.jpeg)Modelo 2
 
-![Imagen que contiene captura de pantalla
-
-Descripción generada automáticamente]Modelo 2
-
-![Imagen que contiene captura de pantalla
-
-Descripción generada automáticamente](050.jpeg)Modelo 3
+![](050.jpeg)Modelo 3
 
 Tabla resultados primeros 3 modelos
 
@@ -130,17 +102,15 @@ Descripción de los parámetros de cada modelo:
 
 A partir de esto se encuentra que el mejor modelo es 12 el cual genera el siguiente árbol significativamente mas complejo, que nos puede indicar que no se está escogiendo el mejor modelo sino el de mejor ajuste a la base de prueba.
 
-![Imagen que contiene texto, mapa
-
-Descripción generada automáticamente](054.jpeg)
+![](054.jpeg)
 # **Evaluación de resultados**
 Al realizar el desarrollo de un modelo de clasificación de los pacientes en las tipologías marcadas a partir del índice NPS. Encontramos que el modelo 2 se presenta como el modelo que nos da mejores resultados tanto en la base de prueba del concurso como la utilizada en el desarrollo. Por lo que es un modelo sencillo que permite accionar rápidamente y planear posibles estrategias que genere el hospital para mejorar este indicador. Este modelo presenta los siguientes resultados.
 
-![Imagen que contiene captura de pantalla
+![](055.jpeg)Modelo 2
 
-Descripción generada automáticamente]Modelo 2
+![](056.png)
 
-![](056.png)Cuando vemos los resultados por categoría vemos que donde más se tiene problemas en términos de predicción es en la categoría de Detractores en la cual los indicadores apenas supera un nivel mínimo predictivo, sin embargo, el modelo sigue siendo útil para poder conocer, cuáles son las características que con las cuales las personas se sienten bien y están dispuestas a recomendar el centro de salud a otras personas.
+Cuando vemos los resultados por categoría vemos que donde más se tiene problemas en términos de predicción es en la categoría de Detractores en la cual los indicadores apenas supera un nivel mínimo predictivo, sin embargo, el modelo sigue siendo útil para poder conocer, cuáles son las características que con las cuales las personas se sienten bien y están dispuestas a recomendar el centro de salud a otras personas.
 # **Implementación**
 Con base en los objetivos de negocio que se tomaron en cuenta al inicio del desarrollo se plantea proponer estrategias con base en el modelo que permitan satisfacer estas iniciativas. Al analizar el árbol de clasificación propuesto encontramos que el parámetro que nos indica 
 
@@ -149,19 +119,3 @@ Con base en los objetivos de negocio que se tomaron en cuenta al inicio del desa
 
 
 
-
-
-\*
-![](057.png)*Ana Carolina López Rodríguez*   
-
-[ref1]: 012.png
-[ref2]: 027.png
-[ref3]: 040.png
-[ref4]: 041.png
-[ref5]: 042.png
-[Imagen que contiene captura de pantalla
-
-Descripción generada automáticamente]: 049.jpeg
-[Imagen que contiene captura de pantalla
-
-Descripción generada automáticamente]: 055.jpeg
